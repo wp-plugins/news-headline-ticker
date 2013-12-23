@@ -11,7 +11,7 @@
 	font-size: 0.75em;
 }
 .newsTickerWP {
-	width: 87% !important;
+	width: 84% !important;
 	line-height: 32px;
 	display: block;
 	position: relative;
@@ -34,14 +34,14 @@
 	line-height: 32px !important;
 }
 .newsContent:focus {
-	none;
+ none;
 }
 .newsContent a {
-	text-decoration: none;	
+	text-decoration: none;
 	color: #1F527B;
 }
 .newsContent a:hover {
-	text-decoration: underline;	
+	text-decoration: underline;
 	color: #0D3059 !important;
 }
 .newsSwipe {
@@ -51,7 +51,7 @@
 	background-color: #DEE77C;
 	display: block;
 	width: 800px;
-	height: 23px; 
+	height: 23px;
 }
 .newsSwipe span {
 	margin-left: 1px;
@@ -98,40 +98,53 @@
 }
 .newsControls li.jnt-prev {
 	background-image: url(../img/controls.png);
-	background-position: 0px 16px;		
+	background-position: 0px 16px;
 }
 .newsControls li.jnt-prev.over {
-	background-position: 0px 32px;		
+	background-position: 0px 32px;
 }
 .newsControls li.jnt-prev.down {
-	background-position: 0px 0px;		
+	background-position: 0px 0px;
 }
 .newsControls li.jnt-next {
 	background-image: url(../img/controls.png);
-	background-position: 16px 16px;	
+	background-position: 16px 16px;
 }
 .newsControls li.jnt-next.over {
-	background-position: 16px 32px;	
+	background-position: 16px 32px;
 }
-.newsControls li.jnt-next.down {	
-	background-position: 16px 0px;	
+.newsControls li.jnt-next.down {
+	background-position: 16px 0px;
 }
 .hideJs {
 	display: none;
 }
 .no-newsTrack {
-	padding: 10px 0px 0px 45px; 
+	padding: 10px 0px 0px 45px;
 	color: #DEE77C;
 }
 .left .newsControls, .left .newsContent, .left .newsTitle, .left .newsTickerWP {
-    float: left;
+	float: left;
 }
 .left .newsControls {
-    padding-left: 6px;
+	padding-left: 6px;
+	float:right;
+}
+.nhtColor {
+	display:none !important;
 }
 .right .newsControls, .right .newsContent, .right .newsTitle, .right .newsTickerWP {
-    float: right;
+	float: right;
 }
 .right .newsControls {
-    padding-right: 6px;
+	padding-right: 6px;
+}
+/* Example for media query */
+@media screen and (max-width: 30.6em) {
+.newsTickerWP-wrapper.has-js {
+ width: 92% !important;
+}
+.newsTickerWP {
+ width:81% !important;
+}
 }

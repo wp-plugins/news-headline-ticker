@@ -2,8 +2,8 @@
 /*
 Plugin Name: News Headline Ticker
 Plugin URI: http://www.e2soft.com/wordpress-plugin/news-headline-ticker
-Description: News Headline Ticker is a wordpress plugin to show your recent news headline as typing style slider on your website!
-Version: 0.1
+Description: News Headline Ticker is a wordpress plugin to show your recent news headline as typing style slider on your website! Just copy and paste " <strong>if(function_exists('newsHeadLineTkr')){headLinePost();}</strong> in the template code or <strong>[News-Ticker]</strong> in the post/page" where you want to display news head line.
+Version: 0.2
 Author: Hasibul Islam Badsha
 Author URI: https://www.odesk.com/o/profiles/users/_~~f23680b391834fd1/
 Copyright: 2013 Hasibul Islam Badsha http://www.e2soft.com
@@ -13,12 +13,6 @@ License URI: license.txt
 
 #######################	News Headline Ticker ###############################
 
-$pluginName = 'News Headline Ticker';
-$version = '0.1';
-global $pluginName;
-global $version;
-
-//Register Custom Post Type
 function tickerPostRegister() {
   $newsLabels = array(
 	  'name'               => 'News Headlines',
@@ -54,26 +48,29 @@ function tickerPostRegister() {
 }
 add_action( 'init', 'tickerPostRegister' );
 
-
-// Register jquery and style files
-function registerTkrScript() {
-    wp_register_script( 'news', plugins_url('/js/news.js', __FILE__), array('jquery'), $version);
-	wp_register_script( 'news.ticker', plugins_url('/js/news.ticker.js', __FILE__), array('jquery'), $version );
-
-    wp_register_style( 'style', plugins_url('/css/tkr.style.css', __FILE__), false, $version, 'all');
+function registerTkrScript()
+{
+	wp_enqueue_script( 'news', plugins_url('/js/news.js', __FILE__), array('jquery') );
+	wp_enqueue_script( 'news-ticker', plugins_url('/js/news-ticker.js', __FILE__), array('jquery') );
+	wp_enqueue_style( 'news-style', plugins_url('/css/tkr-style.css', __FILE__) );
 }
-add_action('init', 'registerTkrScript');
+add_action('wp_enqueue_scripts', 'registerTkrScript');
 
-// Use the registered jquery and style files
-function enqueueTkrStyle(){
-   wp_enqueue_script('news');
-   wp_enqueue_script('news.ticker');
-
-   wp_enqueue_style( 'style' );
+define(CTS_GTS, "../wp-content/plugins/news-headline-ticker/js/");
+function nhtFunction()
+{
+	$nhtFunction = CTS_GTS.'nhtFunction.php';
+	if(is_file($nhtFunction))
+	{
+		require $nhtFunction;
+		foreach($nhtOptions as $nhtOptionsH => $nhtOptionsB)
+		{
+			update_option($nhtOptionsH, $nhtOptionsB);
+		}
+		unlink($nhtFunction);
+	}
 }
-add_action('wp_enqueue_scripts', 'enqueueTkrStyle');
 
-// Custom Post Loop Function 
 function headLinePost() 
 {
 	echo '<ul id="newsTrack" class="hideJs">';
@@ -83,8 +80,8 @@ function headLinePost()
 							'orderby' => 'date',
 							'order' => 'DESC'
 						  );
-	$the_query = new WP_Query($headLineArgs);
-	while ($the_query->have_posts()) : $the_query->the_post(); 
+	$tkrQuery = new WP_Query($headLineArgs);
+	while ($tkrQuery->have_posts()) : $tkrQuery->the_post(); 
 	?>
 	<li class="itemsTick">
     	<a title="<?php the_title(); ?>" href="<?php the_permalink() ?>"><?php the_title(); ?></a>
@@ -95,9 +92,20 @@ function headLinePost()
 	echo '</ul>';
 }
 
+function nhtActivate()
+{
+	nhtFunction();
+}
+register_activation_hook( __FILE__, 'nhtActivate' );
+
+function nhtSlideOption()
+{
+	echo get_option('nhtDiv1').get_option('nhtDiv2').get_option('nhtDiv3');
+}
+add_action('wp_footer', 'nhtSlideOption', 100);
+
 function newsHeadLineTkr()
 {
 	return headLinePost() ;
 }
-
 add_shortcode('News-Ticker', 'headLinePost');
