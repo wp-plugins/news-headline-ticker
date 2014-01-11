@@ -16,6 +16,7 @@ News Headline Ticker is a wordpress plugin to show your recent news headline as 
 The plugin is designed for online news website. "News Headline Ticker" is a free wordpress plugin. Any developer can change Or modify this plugin without author permission. You can [hire the author](https://www.odesk.com/o/profiles/users/_~~f23680b391834fd1/) for devrlop anay website.
 
 View demo of this plugin [Demo] (http://www.deshchitro.com/) under top/main menu.
+Also upcomming our pro version with more than three styles slide, color, background color, text color & hover color cahnge option from wordpress admin. 
 
 
 == Installation ==
