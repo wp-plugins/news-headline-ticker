@@ -39,4 +39,4 @@ Yes.
 N/A
 
 == Upgrade notice ==
-N/A
+Full capabilities post types.
