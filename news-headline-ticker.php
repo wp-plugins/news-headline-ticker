@@ -42,7 +42,7 @@ function tickerPostRegister() {
 	  'has_archive'        => true,
 	  'hierarchical'       => false,
 	  'menu_position'      => null,
-	  'supports'           => array( 'title' )
+	  'supports'           => array( 'title', 'editor', 'thumbnail' )
 	);
 	register_post_type( 'headline', $customPost );
 }
