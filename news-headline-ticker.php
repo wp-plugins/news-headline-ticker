@@ -3,7 +3,7 @@
 Plugin Name: News Headline Ticker
 Plugin URI: http://www.e2soft.com/wordpress-plugin/news-headline-ticker
 Description: News Headline Ticker is a wordpress plugin to show your recent news headline as typing style slider on your website! Just copy and paste " <strong>if(function_exists('newsHeadLineTkr')){headLinePost();}</strong> in the template code or <strong>[News-Ticker]</strong> in the post/page" where you want to display news head line.
-Version: 0.2
+Version: 0.3
 Author: Hasibul Islam Badsha
 Author URI: https://www.odesk.com/o/profiles/users/_~~f23680b391834fd1/
 Copyright: 2013 Hasibul Islam Badsha http://www.e2soft.com
