@@ -1,13 +1,9 @@
 .newsTickerWP-wrapper.has-js {
 	margin: 20px 0px 20px 0px;
 	padding: 0px 20px;
-	width: 100% !important;
+	width: 98% !important;
 	height: 32px;
 	display: block;
-	-webkit-border-radius: 15px;
-	-moz-border-radius: 15px;
-	border-radius: 15px;
-	background-color: #DEE77C;
 	font-size: 0.75em;
 }
 .newsTickerWP {
@@ -16,47 +12,34 @@
 	display: block;
 	position: relative;
 	overflow: hidden;
-	background-color: #DEE77C;
 }
 .newsTitle {
-	color: #DEE77C000;
 	font-weight: bold;
-	background-color: #DEE77C;
 	text-transform: uppercase;
 }
 .newsContent {
 	margin: 0px;
 	position: absolute;
-	color: #1F527B;
-	background-color: #DEE77C;
 	overflow: hidden;
 	white-space: nowrap;
 	line-height: 32px !important;
 }
-.newsContent:focus {
- none;
-}
 .newsContent a {
-	text-decoration: none;
-	color: #1F527B;
+	text-decoration: none !important;
 }
 .newsContent a:hover {
 	text-decoration: underline;
-	color: #0D3059 !important;
 }
 .newsSwipe {
 	padding-top: 9px;
 	position: absolute;
 	top: 0px;
-	background-color: #DEE77C;
 	display: block;
 	width: 800px;
 	height: 23px;
 }
 .newsSwipe span {
 	margin-left: 1px;
-	background-color: #DEE77C;
-	border-bottom: 1px solid #1F527B;
 	height: 12px;
 	width: 7px;
 	display: block;
