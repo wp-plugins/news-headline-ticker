@@ -1,9 +1,9 @@
 ﻿=== News Headline Ticker ===
 Contributors: csehasib
-Donate link: http://www.e2soft.com/donate
-Tags: headline ticker, headline news, news ticker, headline slider, awesome news ticker.
+Donate link: http://www.e2soft.com/
+Tags: headline ticker, headline news, news ticker, headline slider, awesome news ticker, news slider.
 Requires at least: 3.3
-Tested up to: 3.8
+Tested up to: 3.9
 Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
