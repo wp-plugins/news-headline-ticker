@@ -7,7 +7,7 @@
 	font-size: 0.75em;
 }
 .newsTickerWP {
-	width: 84%;
+	width: 80%;
 	line-height: 32px;
 	display: block;
 	position: relative;
@@ -125,11 +125,12 @@
 	padding-right: 6px;
 }
 /* Example for media query */
-@media screen and (max-width: 30.6em) {
+@media screen and (max-width: 669px) {
 .newsTickerWP-wrapper.has-js {
- width: 92% !important;
+ width: 92%;
 }
 .newsTickerWP {
- width:81% !important;
+ width:100%;
 }
+.newsControls{display:none;}
 }
