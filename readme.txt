@@ -39,7 +39,8 @@ Yes.
 3. Front End
 
 == Changelog ==
-N/A
+1.0: Changes all features from admin panel options.
+1.1: Compatibility with latest wp version
 
 == Upgrade notice ==
 Full capabilities post types.

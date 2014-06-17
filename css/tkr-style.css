@@ -1,13 +1,13 @@
 .newsTickerWP-wrapper.has-js {
 	margin: 20px 0px 20px 0px;
 	padding: 0px 20px;
-	width: 98% !important;
+	width: 95%;
 	height: 32px;
 	display: block;
 	font-size: 0.75em;
 }
 .newsTickerWP {
-	width: 84% !important;
+	width: 84%;
 	line-height: 32px;
 	display: block;
 	position: relative;
@@ -23,6 +23,7 @@
 	overflow: hidden;
 	white-space: nowrap;
 	line-height: 32px !important;
+	padding:0 !important;
 }
 .newsContent a {
 	text-decoration: none !important;
@@ -108,6 +109,7 @@
 }
 .left .newsControls, .left .newsContent, .left .newsTitle, .left .newsTickerWP {
 	float: left;
+
 }
 .left .newsControls {
 	padding-left: 6px;
