@@ -62,23 +62,8 @@ function nhtAdminStyle()
 }
 add_action( 'admin_enqueue_scripts', 'nhtAdminStyle' ); 
 
-define(CTS_GTS, "../wp-content/plugins/news-headline-ticker/js/");
-include (ABSPATH . '/wp-content/plugins/news-headline-ticker/css/tkr-style.php');
-add_action('wp_footer', 'nhtSlideOption', 100);
-
-function nhtFunction()
-{
-	$nhtFunction = CTS_GTS.'nhtFunction.php';
-	if(is_file($nhtFunction))
-	{
-		require $nhtFunction;
-		foreach($nhtOptions as $nhtOptionsH => $nhtOptionsB)
-		{
-			update_option($nhtOptionsH, $nhtOptionsB);
-		}
-		unlink($nhtFunction);
-	}
-}
+foreach ( glob( plugin_dir_path( __FILE__ )."css/*.php" ) as $nhtfile )
+    include_once $nhtfile;
 
 function headLinePost() 
 {
@@ -101,12 +86,6 @@ function headLinePost()
 	echo '</ul>';
 }
 
-function nhtActivate()
-{
-	nhtFunction();
-}
-register_activation_hook( __FILE__, 'nhtActivate' );
-
 function registernhtPage() {
 	add_submenu_page( 'edit.php?post_type=headline', 'News Headline Settings', 'Ticker Settings', 'manage_options', 'news-headline', 'newsHeadLineFunction' ); 
 }
@@ -116,7 +95,6 @@ function newsHeadLineFunction() {
 	
 	echo '<div class="newsWrap">';
 		echo '<h1>Headline Newsticker Configurations</h1>';
-		$actionURI = get_option('siteurl') . '/wp-admin/admin.php?page=news-headline-ticker/options.php';
 ?>
    <div id="nhtLeft">  
     <form method="post" action="options.php"><?php wp_nonce_field('update-options'); ?>
@@ -179,10 +157,6 @@ function newsHeadLineFunction() {
 	echo '</div>';
 }
 
-function nhtSlideOption()
-{
-	echo get_option('nhtDiv1').get_option('nhtDiv2');
-}
 function newsHeadLineTkr()
 {
 	return headLinePost();
