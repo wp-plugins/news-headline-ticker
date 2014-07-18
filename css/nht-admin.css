@@ -1,7 +1,8 @@
 .newsWrap{
 	width:95%;
 	background:#fff;
-	padding:15px;	
+	padding:15px;
+	border:1px solid #dfdfdf;	
 }
 .newsWrap h1{
 	text-align:center;
@@ -18,6 +19,7 @@
 #nhtRight{
 	float:left;
 	width:30%;
+	text-align:right;
 }
 label > span{
 color:#ff0000;
