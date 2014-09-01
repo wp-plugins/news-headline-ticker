@@ -1,0 +1,136 @@
+.newsTickerWP-wrapper.has-js {
+	margin: 20px 0px 20px 0px;
+	padding: 0px 20px;
+	width: 95%;
+	height: 32px;
+	display: block;
+	font-size: 0.75em;
+}
+.newsTickerWP {
+	width: 80%;
+	line-height: 32px;
+	display: block;
+	position: relative;
+	overflow: hidden;
+}
+.newsTitle {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.newsContent {
+	margin: 0px;
+	position: absolute;
+	overflow: hidden;
+	white-space: nowrap;
+	line-height: 32px !important;
+	padding:0 !important;
+}
+.newsContent a {
+	text-decoration: none !important;
+}
+.newsContent a:hover {
+	text-decoration: underline;
+}
+.newsSwipe {
+	padding-top: 5px;
+	position: absolute;
+	top: 0px;
+	display: block;
+	width: 800px;
+	height: 23px;
+}
+.newsSwipe span {
+	margin-left: 1px;
+	height: 12px;
+	width: 7px;
+	display: block;
+}
+.newsControls {
+	padding: 8px 0px 0px 0px;
+	list-style-type: none;
+	float: left;
+	margin:0;
+}
+.newsControls li {
+	padding: 0px !important;
+	margin-left: 5px !important;
+	float: left;
+	cursor: pointer;
+	height: 16px;
+	width: 16px;
+	display: block;
+}
+.newsControls li.jnt-play-pause {
+	background-image:url(../img/controls.png);
+	background-position: 32px 16px;
+}
+.newsControls li.jnt-play-pause.over {
+	background-position: 32px 32px;
+}
+.newsControls li.jnt-play-pause.down {
+	background-position: 32px 0px;
+}
+.newsControls li.jnt-play-pause.paused {
+	background-image: url(../img/controls.png);
+	background-position: 48px 16px;
+}
+.newsControls li.jnt-play-pause.paused.over {
+	background-position: 48px 32px;
+}
+.newsControls li.jnt-play-pause.paused.down {
+	background-position: 48px 0px;
+}
+.newsControls li.jnt-prev {
+	background-image: url(../img/controls.png);
+	background-position: 0px 16px;
+}
+.newsControls li.jnt-prev.over {
+	background-position: 0px 32px;
+}
+.newsControls li.jnt-prev.down {
+	background-position: 0px 0px;
+}
+.newsControls li.jnt-next {
+	background-image: url(../img/controls.png);
+	background-position: 16px 16px;
+}
+.newsControls li.jnt-next.over {
+	background-position: 16px 32px;
+}
+.newsControls li.jnt-next.down {
+	background-position: 16px 0px;
+}
+.hideJs {
+	display: none;
+}
+.no-newsTrack {
+	padding: 10px 0px 0px 45px;
+	color: #DEE77C;
+}
+.left .newsControls, .left .newsContent, .left .newsTitle, .left .newsTickerWP {
+	float: left;
+
+}
+.left .newsControls {
+	padding-left: 6px;
+	float:right;
+}
+.nhtColor {
+	display:none !important;
+}
+.right .newsControls, .right .newsContent, .right .newsTitle, .right .newsTickerWP {
+	float: right;
+}
+.right .newsControls {
+	padding-right: 6px;
+}
+/* Example for media query */
+@media screen and (max-width: 669px) {
+.newsTickerWP-wrapper.has-js {
+ width: 92%;
+}
+.newsTickerWP {
+ width:100%;
+}
+.newsControls{display:none;}
+}

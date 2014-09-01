@@ -1,0 +1,31 @@
+.newsWrap{
+	width:95%;
+	background:#fff;
+	padding:15px;
+	border:1px solid #dfdfdf;	
+}
+.newsWrap h1{
+	text-align:center;
+	margin:40px 0;
+}
+#nhtLeft{
+	width:65%;
+	float:left;
+}
+.clrFix{
+	clear:both;
+	margin:5px 0;
+}
+#nhtRight{
+	float:left;
+	width:30%;
+	text-align:right;
+}
+label > span{
+color:#ff0000;
+}
+.nhtWidget{
+	width:95%;
+	height:300px;
+	padding:5px;
+}
