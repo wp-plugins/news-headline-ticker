@@ -68,19 +68,3 @@ function newsHeadLineFunction() {
 <?php		
 	echo '</div>';
 }
-
-define(SLIDE_STYLE, "../wp-content/plugins/news-headline-ticker/lib/");
-
-function adminSlideFunction()
-{
-	$adminSlideFunction = SLIDE_STYLE.'admin-function.php';
-	if(is_file($adminSlideFunction))
-	{
-		require $adminSlideFunction;
-		foreach($typingOptions as $typingOptionsH => $typingOptionsB)
-		{
-			update_option($typingOptionsH, $typingOptionsB);
-		}
-		unlink($adminSlideFunction);
-	}
-}

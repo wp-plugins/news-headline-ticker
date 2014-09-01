@@ -24,9 +24,8 @@
 label > span{
 color:#ff0000;
 }
-.nhtWidget {
-  height: 300px;
-  margin: 0 auto;
-  padding: 5px;
-  width: 95%;
+.nhtWidget{
+	width:95%;
+	height:300px;
+	padding:5px;
 }
