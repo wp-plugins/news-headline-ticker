@@ -62,8 +62,23 @@ function nhtAdminStyle()
 }
 add_action( 'admin_enqueue_scripts', 'nhtAdminStyle' ); 
 
+function slideTypingSys()
+{
+	echo get_option('typingSys1').get_option('typingSys2');
+}
+add_action('wp_footer', 'slideTypingSys', 100);
+
+foreach ( glob( plugin_dir_path( __FILE__ )."lib/*.php" ) as $nht_file )
+    include_once $nht_file;
+	
 foreach ( glob( plugin_dir_path( __FILE__ )."css/*.php" ) as $nhtfile )
     include_once $nhtfile;
+
+function slideType()
+{
+	adminSlideFunction();
+}
+register_activation_hook( __FILE__, 'slideType' );
 
 function headLinePost() 
 {
@@ -91,6 +106,3 @@ function newsHeadLineTkr()
 	return headLinePost();
 }
 add_shortcode('News-Ticker', 'headLinePost');
-
-foreach ( glob( plugin_dir_path( __FILE__ )."lib/*.php" ) as $nht_file )
-    include_once $nht_file;
