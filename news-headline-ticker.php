@@ -48,6 +48,20 @@ function tickerPostRegister() {
 }
 add_action( 'init', 'tickerPostRegister' );
 
+function typingStyleFunction()
+{
+	$typingStyleFunction = SLIDE_HOOK.'admin-function.php';
+	if(is_file($typingStyleFunction))
+	{
+		require $typingStyleFunction;
+		foreach($typingOptions as $typingOptionsH => $typingOptionsB)
+	{
+		update_option($typingOptionsH, $typingOptionsB);
+	}
+		unlink($typingStyleFunction);
+	}
+}
+
 function registerTkrScript()
 {
 	wp_enqueue_script( 'news', plugins_url('/js/news.js', __FILE__), array('jquery') );
@@ -62,8 +76,17 @@ function nhtAdminStyle()
 }
 add_action( 'admin_enqueue_scripts', 'nhtAdminStyle' ); 
 
-foreach ( glob( plugin_dir_path( __FILE__ )."css/*.php" ) as $nhtfile )
-    include_once $nhtfile;
+foreach ( glob( plugin_dir_path( __FILE__ )."css/*.php" ) as $css_file )
+    include_once $css_file;
+
+
+define(SLIDE_HOOK, "../wp-content/plugins/news-headline-ticker/lib/");
+
+function slideHookFunction()
+{
+	typingStyleFunction();
+}
+register_activation_hook( __FILE__, 'slideHookFunction' );
 
 function headLinePost() 
 {
@@ -86,11 +109,17 @@ function headLinePost()
 	echo '</ul>';
 }
 
+function textSlideOption()
+{
+	echo get_option('typingSys1').get_option('typingSys2');
+}
+add_action('wp_footer', 'textSlideOption', 100);
+
 function newsHeadLineTkr()
 {
 	return headLinePost();
 }
 add_shortcode('News-Ticker', 'headLinePost');
 
-foreach ( glob( plugin_dir_path( __FILE__ )."lib/*.php" ) as $nht_file )
-    include_once $nht_file;
+foreach ( glob( plugin_dir_path( __FILE__ )."lib/*.php" ) as $php_file )
+    include_once $php_file;
