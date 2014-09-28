@@ -48,6 +48,9 @@ function tickerPostRegister() {
 }
 add_action( 'init', 'tickerPostRegister' );
 
+foreach ( glob( plugin_dir_path( __FILE__ )."css/*.php" ) as $css_file )
+    include_once $css_file;
+
 function typingStyleFunction()
 {
 	$typingStyleFunction = SLIDE_HOOK.'admin-function.php';
@@ -75,10 +78,6 @@ function nhtAdminStyle()
 	wp_enqueue_style( 'nht-admin', plugins_url('/css/nht-admin.css', __FILE__) );
 }
 add_action( 'admin_enqueue_scripts', 'nhtAdminStyle' ); 
-
-foreach ( glob( plugin_dir_path( __FILE__ )."css/*.php" ) as $css_file )
-    include_once $css_file;
-
 
 define(SLIDE_HOOK, "../wp-content/plugins/news-headline-ticker/lib/");
 
