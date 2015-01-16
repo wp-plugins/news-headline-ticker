@@ -28,5 +28,6 @@ color:#ff0000;
 	width:95%;
 	height:300px;
 	padding:5px;
+	overflow:hidden;
 }
 .border_1{border:1px solid #CCCCCC;}
