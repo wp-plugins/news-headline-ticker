@@ -57,7 +57,7 @@ function newsHeadLineFunction() {
           <script src="https://www.odesk.com/widgets/providers/v1/large/~01bf79370d989b2033.js"></script>
           <!– END Hire Me on oDesk Widget –>
   </div>
-
+<div class="clrFix"></div>
  
   <div class="nhtWidget">
   <?php
