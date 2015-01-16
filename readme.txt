@@ -3,8 +3,8 @@ Contributors: csehasib
 Donate link: http://www.e2soft.com/
 Tags: headline ticker, headline news, news ticker, headline slider, awesome news ticker, news slider.
 Requires at least: 3.3
-Tested up to: 4.0
-Stable tag: 1.1.3
+Tested up to: 4.1
+Stable tag: 1.1.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -44,6 +44,7 @@ Yes.
 1.1.1: Compatibility with latest wp version.
 1.1.2: Fix style sheet.
 1.1.3: Compatibility with wp version 4.0 & fix some style.
+1.1.4: Compatibility with wp version 4.1.
 
 == Upgrade notice ==
 Full capabilities post types.

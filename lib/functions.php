@@ -57,13 +57,18 @@ function newsHeadLineFunction() {
           <script src="https://www.odesk.com/widgets/providers/v1/large/~01bf79370d989b2033.js"></script>
           <!– END Hire Me on oDesk Widget –>
   </div>
-  
+
+ 
   <div class="nhtWidget">
-  <a href="http://www.e2soft.com" title="Web Design Company" target="_blank"><img src="<?php bloginfo('url' ); echo"/wp-content/plugins/news-headline-ticker/img/responsive-web-design.png"; ?>" alt="Web Design Company" /></a>
+  <?php
+	$urls_total = array("http://www.e2soft.com/web-design/","http://www.e2soft.com/web-development/","http://www.e2soft.com/web-hosting/","http://www.e2soft.com/portfolio");
+	$random_urls = array_rand($urls_total);
+  ?>
+	<iframe class="border_1" src="<?php echo $urls_total["$random_urls"]; ?>" width="320" height="300">
+	</iframe>
+	</div>
+	
   </div>
-  
-  </div>
-  
 <div class="clrFix"></div>
 <?php		
 	echo '</div>';
