@@ -31,3 +31,10 @@ color:#ff0000;
 	overflow:hidden;
 }
 .border_1{border:1px solid #CCCCCC;}
+/*.pick_color {
+  margin-bottom: -4px;
+  margin-left: 5px;
+}*/
+input + .iris-picker {
+  margin-left: 0px !important;
+}
