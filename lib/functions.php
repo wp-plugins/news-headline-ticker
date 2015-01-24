@@ -39,7 +39,7 @@ function newsHeadLineFunction() {
 	
         <input type="hidden" name="action" value="update" />
         <input type="hidden" name="page_options" value="nht_border_radius, nht_bg_color, nht_text_color, nht_label_name, nht_hover_color, nht_label_color" />
-		<p class="submit"><input type="submit" name="Submit" value="<?php _e('Save Changes') ?>" /></p>
+		<p class="submit"><input type="submit" name="Submit" value="<?php _e('Save Changes') ?>" class="button button-primary" /></p>
 	</form>      
   </div>
   </div>
@@ -48,12 +48,6 @@ function newsHeadLineFunction() {
   <div id="nhtRight">
   
   <div class="nhtWidget">
-  		<h3>Need Responsive Web Design?</h3>
-  		<a href="http://www.e2soft.com" title="Web Design Company" target="_blank"><img src="<?php bloginfo('url' ); echo"/wp-content/plugins/news-headline-ticker/img/responsive-web-design.png"; ?>" alt="Web Design Company" /></a>
-  </div>
-<div class="clrFix"></div>
- 
-  <div class="nhtWidget">
   <?php
 	$urls_total = array("http://www.e2soft.com/web-design/","http://www.e2soft.com/web-development/","http://www.e2soft.com/web-hosting/","http://www.e2soft.com/portfolio");
 	$random_urls = array_rand($urls_total);
@@ -61,7 +55,22 @@ function newsHeadLineFunction() {
 	<iframe class="border_1" src="<?php echo $urls_total["$random_urls"]; ?>" width="320" height="300">
 	</iframe>
 	</div>
-    <!--<style>
+    
+    <div class="nhtWidget">
+  		<h3>Need Responsive Web Design?</h3>
+  		<a href="http://www.e2soft.com" title="Web Design Company" target="_blank"><img src="<?php bloginfo('url' ); echo"/wp-content/plugins/news-headline-ticker/img/responsive-web-design.png"; ?>" alt="Web Design Company" /></a>
+  </div>
+<div class="clrFix"></div>
+    
+<p><h3>Donate and support the development.</h3> With your help I can make Simple Fields even better! $5, $10, $100 – any amount is fine! :)</p>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="82C6LTLMFLUFW">
+<input type="image" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+</form>
+
+<!--<style>
 	.iris-picker {
 		display: none;
 		position:absolute;
