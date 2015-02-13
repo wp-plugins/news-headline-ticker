@@ -84,7 +84,7 @@ function nhtAdminStyle()
 }
 add_action( 'admin_enqueue_scripts', 'nhtAdminStyle' ); 
 
-define(SLIDE_HOOK, "../wp-content/plugins/news-headline-ticker/lib/");
+define("SLIDE_HOOK", "../wp-content/plugins/news-headline-ticker/lib/");
 
 function slideHookFunction()
 {
