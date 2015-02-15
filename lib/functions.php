@@ -85,12 +85,14 @@ function newsHeadLineFunction() {
 </div>
 
 <div class="nhtWidget">
+<h3>Help & Support</h3>
 <p style="text-align:left; padding:10px 7px;">
 <strong>1. </strong>Upload ‘news-headline-ticker‘ to the ‘/wp-content/plugins/‘ directory<br />
 <strong>2. </strong>Activate the plugin through the ‘Plugins’ menu in WordPress<br />
 <strong>3. </strong>Click on the new menu item “News Headline” and create your head line news.<br />
 <strong>4. </strong>Just copy and paste <strong>[News-Ticker]</strong> in the post/page" where you want to display news head line..
 </p>
+<h4><a href="http://www.e2soft.com/">More Help & Support</a></h4>
 <div class="clrFix"></div>
 </div>
 
