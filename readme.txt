@@ -15,7 +15,7 @@ News Headline Ticker is a wordpress plugin to show your recent news headline as 
 
 The plugin is designed for online news website. "News Headline Ticker" is a free wordpress plugin. Any developer can change Or modify this plugin without author permission.
 
-View live demo of this plugin [http://www.e2soft.com/blog/news-headline-ticker/](http://www.e2soft.com/blog/news-headline-ticker/).
+View live demo support of this plugin [http://www.e2soft.com/blog/news-headline-ticker/](http://www.e2soft.com/blog/news-headline-ticker/).
 
 = Usage =
 
