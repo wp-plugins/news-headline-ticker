@@ -20,7 +20,8 @@
 }
 .label{color:<?php $nht_label_color = get_option('nht_label_color'); if(!empty($nht_label_color)) {echo $nht_label_color;} else {echo "#FFF";}?>;
 font-weight:bold; font-size:15px;}
-.slideBody ul li a{color:<?php $nht_hover_color = get_option('nht_hover_color'); if(!empty($nht_hover_color)) {echo $nht_hover_color;} else {echo "#FFF";}?>;}
+.slideBody ul li a{color:<?php $nht_hover_color = get_option('nht_hover_color'); if(!empty($nht_hover_color)) {echo $nht_hover_color;} else {echo "#FFF";}?>;
+border:0 none !important;}
 
 </style>
 <?php 

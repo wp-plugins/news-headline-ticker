@@ -61,21 +61,17 @@ function newsHeadLineFunction() {
   <div id="nhtRight">
   
   <div class="nhtWidget">
+  <h3>Need Web Design?</h3>
   <?php
-    $urls_total = array("http://www.e2soft.com/web-design/","http://www.e2soft.com/web-development/","http://www.e2soft.com/web-hosting/","http://www.e2soft.com/portfolio");
+    $urls_total = array("http://www.e2soft.com/web-design/","http://www.e2soft.com/web-development/","http://www.e2soft.com/web-hosting/","http://www.e2soft.com/portfolio", "http://www.e2soft.com/services", "http://www.e2soft.com/contact-us/");
     $random_urls = array_rand($urls_total);
   ?>
     <iframe class="border_1" src="<?php echo $urls_total["$random_urls"]; ?>" width="320" height="300">
     </iframe>
+    <div class="clrFix"></div>
     </div>
-    
-<div class="nhtWidget">
-  		<h3>Need Responsive Web Design?</h3>
-  		<a href="http://www.e2soft.com" title="Web Design Company" target="_blank"><img src="<?php bloginfo('url' ); echo"/wp-content/plugins/news-headline-ticker/img/responsive-web-design.png"; ?>" alt="Web Design Company" /></a>
-        <div class="clrFix"></div>
-  </div>
+  <div class="clrFix"></div>
   
-
 <div class="nhtWidget">
     
 <p><h3>Donate and support the development.</h3> With your help I can make Simple Fields even better! $5, $10, $100 – any amount is fine! :)</p>
@@ -91,7 +87,7 @@ function newsHeadLineFunction() {
 <div class="nhtWidget">
 <p style="text-align:left; padding:10px 7px;">
 <strong>1. </strong>Upload ‘news-headline-ticker‘ to the ‘/wp-content/plugins/‘ directory<br />
-<strong>2. </strong>Activate the plugin through the ‘Plugins’ menu in WordPress
+<strong>2. </strong>Activate the plugin through the ‘Plugins’ menu in WordPress<br />
 <strong>3. </strong>Click on the new menu item “News Headline” and create your head line news.<br />
 <strong>4. </strong>Just copy and paste <strong>[News-Ticker]</strong> in the post/page" where you want to display news head line..
 </p>

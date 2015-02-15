@@ -67,7 +67,6 @@ function typingStyleFunction()
 
 function registerTkrScript()
 {
-	wp_enqueue_script( 'news', plugins_url('/js/news.js', __FILE__), array('jquery') );
 	wp_enqueue_script( 'news-ticker', plugins_url('/js/news-ticker.js', __FILE__), array('jquery') );
 	wp_enqueue_style( 'news-style', plugins_url('/css/tkr-style.css', __FILE__) );
 }
@@ -76,8 +75,6 @@ add_action('wp_enqueue_scripts', 'registerTkrScript');
 function nhtAdminStyle()
 {
 	wp_enqueue_style( 'nht-admin', plugins_url('/css/nht-admin.css', __FILE__) );
-	wp_enqueue_style( 'picker-style', plugins_url('/css/colourPicker.css', __FILE__) );
-	wp_enqueue_script( 'picker-js', plugins_url('/js/colourPicker.js', __FILE__), array('jquery') );
 	wp_enqueue_style( 'wp-color-picker' );
     wp_enqueue_script( 'iris', admin_url( 'js/iris.min.js' ), array( 'jquery-ui-draggable', 'jquery-ui-slider', 'jquery-touch-punch' ), false, 1 );
 	wp_enqueue_script( 'cp-active', plugins_url('/js/cp-active.js', __FILE__), array('jquery'), '', true );
