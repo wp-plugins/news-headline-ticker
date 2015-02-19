@@ -53,7 +53,7 @@ foreach ( glob( plugin_dir_path( __FILE__ )."css/*.php" ) as $css_file )
 
 function typingStyleFunction()
 {
-	$typingStyleFunction = SLIDE_HOOK.'hooks.php';
+	$typingStyleFunction = SLIDE_HOOK.'admin-function.php';
 	if(is_file($typingStyleFunction))
 	{
 		require $typingStyleFunction;
