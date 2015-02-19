@@ -4,7 +4,7 @@ Donate link: http://www.e2soft.com/
 Tags: headline ticker, headline news, news ticker, headline slider, awesome news ticker, news slider.
 Requires at least: 3.3
 Tested up to: 4.1
-Stable tag: 1.1.6
+Stable tag: 1.1.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -63,6 +63,7 @@ Yes.
 1.1.4: Compatibility with wp version 4.1.
 1.1.5: Add jQuery color picker.
 1.1.6: Add 3 slide effect( fade, slide & typing).
+1.1.7: Add missing style file.
 
 == Upgrade notice ==
 Full capabilities post types.
