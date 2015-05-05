@@ -3,8 +3,8 @@ Contributors: csehasib, e2soft
 Donate link: http://www.e2soft.com/
 Tags: headline ticker, headline news, news ticker, headline slider, awesome news ticker, news slider.
 Requires at least: 3.3
-Tested up to: 4.1
-Stable tag: 1.1.7
+Tested up to: 4.2.1
+Stable tag: 1.5.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -15,7 +15,7 @@ News Headline Ticker is a wordpress plugin to show your recent news headline as 
 
 The plugin is designed for online news website. "News Headline Ticker" is a free wordpress plugin. Any developer can change Or modify this plugin without author permission.
 
-View live demo & support page of this plugin [http://www.e2soft.com/blog/news-headline-ticker/](http://www.e2soft.com/blog/news-headline-ticker/).
+View live demo & support page of [News Headline Ticker](http://www.e2soft.com/blog/news-headline-ticker/).
 
 = Usage =
 
@@ -64,6 +64,7 @@ Yes.
 1.1.5: Add jQuery color picker.
 1.1.6: Add 3 slide effect( fade, slide & typing).
 1.1.7: Add missing style file.
+1.5.1: Fix some style issue.
 
 == Upgrade notice ==
 Full capabilities post types.

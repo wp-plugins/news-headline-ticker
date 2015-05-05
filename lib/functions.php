@@ -61,15 +61,9 @@ function newsHeadLineFunction() {
   <div id="nhtRight">
   
   <div class="nhtWidget">
-  <h3>Need Web Design?</h3>
-  <?php
-    $urls_total = array("http://www.e2soft.com/web-design/","http://www.e2soft.com/web-development/","http://www.e2soft.com/web-hosting/","http://www.e2soft.com/portfolio", "http://www.e2soft.com/services", "http://www.e2soft.com/contact-us/");
-    $random_urls = array_rand($urls_total);
-  ?>
-    <iframe class="border_1" src="<?php echo $urls_total["$random_urls"]; ?>" width="320" height="300">
-    </iframe>
-    <div class="clrFix"></div>
-    </div>
+  		<h3>Need Responsive Web Design?</h3>
+  		<a href="http://www.e2soft.com" title="Web Design Company" target="_blank"><img src="<?php bloginfo('url' ); echo"/wp-content/plugins/news-headline-ticker/img/responsive-web-design.png"; ?>" alt="Web Design Company" /></a>
+  </div>
   <div class="clrFix"></div>
   
 <div class="nhtWidget">
