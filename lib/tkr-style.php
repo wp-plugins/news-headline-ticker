@@ -22,10 +22,8 @@
 font-weight:bold; font-size:15px;}
 .slideBody ul li a{color:<?php $nht_hover_color = get_option('nht_hover_color'); if(!empty($nht_hover_color)) {echo $nht_hover_color;} else {echo "#FFF";}?>;
 border:0 none !important;}
-
 </style>
 <?php 
 }
 add_action('wp_footer','nht_dynamicCSS', 100);
-
 ?>

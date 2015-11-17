@@ -3,8 +3,8 @@ Contributors: csehasib, e2soft
 Donate link: http://www.e2soft.com/
 Tags: headline ticker, headline news, news ticker, headline slider, awesome news ticker, news slider.
 Requires at least: 3.3
-Tested up to: 4.2.1
-Stable tag: 1.5.1
+Tested up to: 4.3.1
+Stable tag: 2.1.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -54,17 +54,53 @@ Yes.
 2. Back End
 3. Front End
 
+
 == Changelog ==
-1.0: News version.
-1.1: Compatibility with latest wp version.
-1.1.1: Compatibility with latest wp version.
-1.1.2: Fix style sheet.
-1.1.3: Compatibility with wp version 4.0 & fix some style.
-1.1.4: Compatibility with wp version 4.1.
-1.1.5: Add jQuery color picker.
-1.1.6: Add 3 slide effect( fade, slide & typing).
-1.1.7: Add missing style file.
-1.5.1: Fix some style issue.
+
+= 2.1.5 =
+
+*  Compatibility with wp version 4.3.1 & Fix some issue
+
+= 2.1.1 =
+
+*  Compatibility with wp version 4.3
+
+= 1.1.7 =
+
+*  Add missing style file.
+
+= 1.1.6 =
+
+*  Add 3 slide effect( fade, slide & typing).
+
+= 1.1.5 =
+
+*  Add jQuery color picker.
+
+= 1.1.4 =
+
+*  Compatibility with wp version 4.1.
+
+= 1.1.3 =
+
+* Compatibility with wp version 4.0 & fix some style.
+
+= 1.1.2 =
+
+* Fix style sheet
+
+= 1.1.1 =
+
+* Compatibility with latest wp version.
+
+= 1.1 =
+
+* Compatibility with latest wp version.
+
+= 1.0 =
+
+* Initial version.
+
 
 == Upgrade notice ==
 Full capabilities post types.

@@ -3,7 +3,7 @@
 Plugin Name: News Headline Ticker
 Plugin URI: http://www.e2soft.com/blog/news-headline-ticker/
 Description: News Headline Ticker is a wordpress plugin to show your recent news headline as typing style slider on your website!  Use this shortcode <strong>[News-Ticker]</strong> in the post/page" where you want to display news head line.
-Version: 1.5.1
+Version: 2.1.5
 Author: S M Hasibul Islam
 Author URI: http://www.e2soft.com/
 Copyright: 2015 S M Hasibul Islam http://www.e2soft.com
@@ -91,16 +91,18 @@ register_activation_hook( __FILE__, 'slideHookFunction' );
 
 function headLinePost() 
 { ?>
-  <div class="slideBody">
-      <div class="label"> 
-      <?php 
+
+<div class="slideBody">
+<div class="label">
+  <?php 
 	  	$nht_label = get_option('nht_label'); 
 	  	if(!empty($nht_label)) {echo $nht_label;} else {echo "Breaking News:";}
 	  ?>
-      </div><ul class="<?php 
+</div>
+<ul class="<?php 
 	  $nht_effect = get_option('nht_effect'); 
 	  if(!empty($nht_effect)) {echo $nht_effect;} else {echo "typing";}?>">
-    <?php    
+<?php    
 	$headLineArgs = array(
 							'post_type' => 'headline',
 							'showposts' => 10,
@@ -110,10 +112,10 @@ function headLinePost()
 	$tkrQuery = new WP_Query($headLineArgs);
 	while ($tkrQuery->have_posts()) : $tkrQuery->the_post(); 
 	?>
-	<li>
-    	<a title="<?php the_title(); ?>" href="<?php the_permalink() ?>"><?php the_title(); ?></a>
-    </li>
-	<?php
+<li> <a title="<?php the_title(); ?>" href="<?php the_permalink() ?>">
+  <?php the_title(); ?>
+  </a> </li>
+<?php
 	endwhile; 
 	wp_reset_query();
 	echo '</ul></div>';
